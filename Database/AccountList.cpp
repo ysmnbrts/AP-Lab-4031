@@ -10,6 +10,7 @@ void AccountList::addAccount(Account* _accountToAdd)
 {
    Account *account = new Account(*_accountToAdd);
     this->at(size-1).next= new Account(*account);   
+    size++;
 }
 
 Account* AccountList:: getHead()const { return head; }
